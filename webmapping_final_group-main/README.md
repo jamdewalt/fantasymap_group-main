@@ -1,7 +1,7 @@
 # Team Name
-
+Fantasy Mapping
 ### Team Members
-
+James DeWalt
 ### Final Proposal
 1. Persona/Scenario
     1. Persona
