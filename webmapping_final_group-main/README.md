@@ -1,7 +1,7 @@
 # Team Name
 Fantasy Mapping
 ### Team Members
-James DeWalt
+James DeWalt, Eli Samuelson
 ### Final Proposal
 1. Persona/Scenario
     1. Persona: This potential audience for this project are readers or potential readers that wish to explore the world of Atlantis more. Their primary motivation for using this project is to learn more about the setting. Their expertise level in using the project varies, therefore, we need to make sure the UI/UIX is applicable to people of varying expertise. 
