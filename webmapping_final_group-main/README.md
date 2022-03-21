@@ -5,7 +5,7 @@ James DeWalt, Eli Samuelson
 ### Final Proposal
 1. Persona/Scenario
     1. Persona: This potential audience for this project are readers or potential readers that wish to explore the world of Atlantis more. Their primary motivation for using this project is to learn more about the setting. Their expertise level in using the project varies, therefore, we need to make sure the UI/UIX is applicable to people of varying expertise. 
-    2. Scenario: This project primarily supports the presentation stage of science
+    2. Scenario: This project primarily supports the presentation stage of science. The user, a reader of the book would be lookin and exploring the map of the world and finding out where a speccific event in the book occured. They want to be able to pan, and zoom in order to be able to explore the map and find the location they were looking for. They also wish to recive infomation about the place they decided to look for by clicking on the location. Being able to add layers and gain more information about the place would also be informative for them.   
 
 2. Requirements Document
 Your persona/scenario description is accompanied with a requirements document outlining your proposed interactive map functionality. The requirements document mimics an actual response to an RfP, although is abbreviated in table format for the proposal deliverable. The requirements document should be divided according to representation (including data sources) and interaction. For the representation section, include each basemap tileset or context overlay as a separate row in the requirements document, providing:
