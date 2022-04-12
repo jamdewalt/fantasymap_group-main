@@ -1,3 +1,5 @@
+![Atlantis: After the Great Splitting](/assets/images/atlantis.jpg "Atlantis")
+
 # Team Name
 Fantasy Mapping
 ### Team Members
@@ -14,7 +16,10 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 Requirements Document:
 
     Representation
-    Coding by operator and operand (e.g., identify: time; organize functionality by operator), and
+    1.Basemap
+
+    Interaction
+    1. 
     A description of the proposed interaction behavior and UI design.
     
     
@@ -23,11 +28,7 @@ Requirements Document:
 
 
 
-For the interaction section, include each unique interface widget as a separate row in the requirements document, providing:
 
-    An abbreviated title for the function,
-    Coding by operator and operand (e.g., identify: time; organize functionality by operator), and
-    A description of the proposed interaction behavior and UI design.
 
 
 ----------
