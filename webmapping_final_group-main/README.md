@@ -1,5 +1,3 @@
-![Atlantis](/assets/img/Atlantis.jpg "Atlantis")
-
 # Team Name
 Fantasy Mapping
 ### Team Members
