@@ -1,3 +1,4 @@
+![Atlantis: After the Great Splitting](/assets/images/Atlantis.jpg "Atlantis")
 # Team Name
 Fantasy Mapping
 ### Team Members
@@ -14,7 +15,9 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 Requirements Document:
 
     Representation
-    1.Basemap
+    1.Basemap: Multiscale tilesets for use as the basemap including: Boundaries, Topographical, Oceans, and Roads  
+    2.Legend: 
+
 
     Interaction
     1. 
