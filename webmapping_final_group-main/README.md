@@ -1,4 +1,4 @@
-![Atlantis](/assets/img/Atlantis.jpg "Atlantis")
+![Atlantis](/Atlantis.jpg "Atlantis")
 
 # Team Name
 Fantasy Mapping
