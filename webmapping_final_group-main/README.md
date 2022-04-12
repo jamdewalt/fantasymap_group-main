@@ -12,16 +12,22 @@ James DeWalt, Eli Samuelson, Gavin Maurer
     2. Scenario 2: Upon arriving at the interactive, the user is met with a visual of the map of Atlantis. The user has four main options upon opening the map, pan, zoom, retrieve, or search for a location on the map. This user is interested in the actions that took place within The Great Northern Wood so they move to the searchbar and type in Skograheim, the city within the forests. Upon entering the name the users screen pans and zooms to the city and a pop up provides information and visuals to the user. With this the user is able to **compare** their ideas of what Skograheim looked like to it's portrayed appearance on the map. Knowing where Skograheim now lies the user now builds an **association** between Skograheim and the Great Northern Wood and their location within The Kingdom of Vynter. Curious now about the Kingdom of Vynter and more about what took place here within the story. The user pans to the Jarnmerki Mountains to learn more about how treacherous the path through them is and **identifying** the road that the main characters travelled on through those dangerous cliffs and valleys. After learning more about the cities and areas to the north within the story, the user logs off the map.
 ----------
 3. Requirements Document:
-    Representation
-    1.
-    2.
-    3.
+    1. Representation
+    An abbreviated title for the function,
+    Coding by operator and operand (e.g., identify: time; organize functionality by operator), and
+    A description of the proposed interaction behavior and UI design.
+    
+    
 
 
 
 
 
+For the interaction section, include each unique interface widget as a separate row in the requirements document, providing:
 
+    An abbreviated title for the function,
+    Coding by operator and operand (e.g., identify: time; organize functionality by operator), and
+    A description of the proposed interaction behavior and UI design.
 
 
 ----------
