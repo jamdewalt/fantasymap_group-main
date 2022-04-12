@@ -15,12 +15,18 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 Requirements Document:
 
     Representation
-    1.Basemap: Multiscale tilesets for use as the basemap including: Boundaries, Topographical, Oceans, and Roads  
-    2.Legend: 
-
+    1.Basemap: Five multiscale tilesets for use as the basemap including: Political, Physical, Topographical, Roads, and Climate. Priority in that order
+    2.Legend: Visual description of capital cities, cities, towns, routes, and other Places of Interest
+    3.Supp. Information: Documentation on map sources and techniques, along with notes from the authors
+    4.Scale Bar: Provides a visual indication of distance and feature size on the map, may be a fictious unit of measurement 
+    5.Routes: Depicted by various types of lines based on significance
+    6.Population Centers: Depicted by a visual/symbolic hierarchy pertaining to overall population size in the pop center
+    7.Places of Interest: Notable landmarks from the book
+    8.Overview: Documentation on background description and provides some guidance to using the map
 
     Interaction
-    1. 
+    1.Basemap Toggle: Switch between Basemaps
+
     A description of the proposed interaction behavior and UI design.
     
     
