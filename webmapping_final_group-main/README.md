@@ -25,11 +25,12 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 
     Interaction
     1.Basemap Toggle: Overlay: Switch between Basemaps
-    2.Population Center Selection: Retrieve: Objects. Hover to highlight population center. Click toprovide more lore/information, to include .jpg file of pop center structures map
+    2.Population Center Selection: Retrieve: Objects. Hover to highlight population center. Click to provide more lore/information, to include .jpg file of pop center structures map
     3.Route Selection: Retrieve: Objects. Hover to highlight route selection. Click to provide more lore/information on route
     4.Place of Interest Selection: Retrieve: Objects. Hover to highlight POI selection. Click to provide more lore/information on POI
     5.Query Panel: Search. Objects. Form-fill in to search for specific pop centers, routes, or POIs. Highlight and pan to selection. Utilizes text-autofill to avoid losing interest from not knowing proper spelling
     6.Map Browsing: Zoom/Pan. Zoom slider/Zoom buttons: Direct Manipulation by double clicking on Map and +/- control.  Pan buttons:Direct Manipulation for pan via click and drag, potentially implement a button that resets to a set base view
+    7. Help/Supp.Info: Retrieve: Objects. Direct manipulation by clicking to open Supp.Info/ help documentation
 
 
 
