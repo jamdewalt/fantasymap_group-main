@@ -1,4 +1,4 @@
-![Atlantis: After the Great Splitting](/images/Atlantis.jpg "Atlantis")
+![Atlantis](/assets/img/Atlantis.jpg "Atlantis")
 
 # Team Name
 Fantasy Mapping
