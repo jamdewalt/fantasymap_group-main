@@ -34,6 +34,7 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 
 ----------
 4. Wireframes:
+
 The following Wireframes showcase User Case Scenario 1:
 ![](/webmapping_final_group-main/img/Welcome.jpg "Welcome")
 This displays the welcome/help message when the user first enters the website. A similar window appears by clicking the Help/Supp panel in the upper right corner
