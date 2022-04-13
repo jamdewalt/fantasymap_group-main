@@ -34,23 +34,28 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 
 ----------
 4. Wireframes:
-    The following Wireframes showcase User Case Scenario 1:
+The following Wireframes showcase User Case Scenario 1:
 ![](/webmapping_final_group-main/img/Welcome.jpg "Welcome")
 This displays the welcome/help message when the user first enters the website. A similar window appears by clicking the Help/Supp panel in the upper right corner
+
 ----------
 ![](/webmapping_final_group-main/img/Query.jpg "Query")
 This shows usage of the query panel. The user has just typed in "d" and it has autofilled possible queries
+
 ----------
 ![](/webmapping_final_group-main/img/Political.jpg "Political")
 This shows usage of the overlay basemap toggle with Political basemap selected. The user decides to explore Norskena
+
 ----------
 ![](/webmapping_final_group-main/img/Zoom.jpg "Zoom/Pan")
 This shows a zoomed in version of Norskena. From here the user can pan around and explore
+
 ----------
 ![](/webmapping_final_group-main/img/City.jpg "City")
 The user clicked on Dypvik, which prompted a pop-up with more information
+
 ----------
-![](/webmapping_final_group-main/img/Route.jpg "Routes")
+![](/webmapping_final_group-main/img/Routes.jpg "Routes")
 This shows usage of the overlay basemap toggle with Routes basemap selected. The user decides to explore Iron Road, they click it to find out more information. Afterwards, they happily exit out after learning what they wanted to.
 
 
