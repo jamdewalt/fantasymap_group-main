@@ -34,12 +34,12 @@ James DeWalt, Eli Samuelson, Gavin Maurer
 
 ----------
 4. Wireframes
-![Atlantis](/webmapping_final_group-main/img/Welcome.jpg "Welcome")
-![Atlantis](/webmapping_final_group-main/img/Query.jpg "Query")
-![Atlantis](/webmapping_final_group-main/img/Political.jpg "Political")
-![Atlantis](/webmapping_final_group-main/img/Zoom.jpg "Zoom/Pan")
-![Atlantis](/webmapping_final_group-main/img/City.jpg "City")
-![Atlantis](/webmapping_final_group-main/img/Route.jpg "Route")
+![](/webmapping_final_group-main/img/Welcome.jpg "Welcome")
+![](/webmapping_final_group-main/img/Query.jpg "Query")
+![](/webmapping_final_group-main/img/Political.jpg "Political")
+![](/webmapping_final_group-main/img/Zoom.jpg "Zoom/Pan")
+![](/webmapping_final_group-main/img/City.jpg "City")
+![](/webmapping_final_group-main/img/Route.jpg "Route")
 
 
 
