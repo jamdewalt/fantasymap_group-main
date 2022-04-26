@@ -1,6 +1,6 @@
 /*CSS Styles for all parts of the html*/
 body {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 #title{
   line-height: 20px;
@@ -17,7 +17,7 @@ body {
   font-size: 12px;
   font-weight: normal;
 }
-#map { height: 300px; }
+#map { height: 600px; }
 
 .leaflet-popup-content p {
     margin: 0.1em 0;
