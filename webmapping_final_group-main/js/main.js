@@ -2,13 +2,15 @@
 var map;
 var minValue;
 var dataStats = {};
-var statestyle = {
-    fillColor: "#68bd56",
+function StateStyle(feature) {
+  return {
+    fillColor: feature.properties.Color,
     color: "#000",
     weight: 1,
     opacity: 1,
     fillOpacity: 0.8
-};
+  };
+}
 var citystyle = {
   radius: 3,
   fillColor: "#000",
@@ -17,7 +19,13 @@ var citystyle = {
   opacity: 1,
   fillOpacity: 1
 };
-
+var riverstyle = {
+  fillColor: "#3944bc",
+  color: "#3944bc",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 1
+};
 //Create map function
 function createMap(){
 //Create the map
@@ -31,23 +39,32 @@ L.tileLayer('', {
         'attribution': 'Map data &copy; OpenStreetMap contributors'
 }).addTo(map);
 
-var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{
-    style: statestyle
-}).addTo(map);
-var riverLayer = new L.GeoJSON.AJAX("data/Atlantis_rivers.geojson");
-//riverLayer.addTo(map);
-var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, citystyle);
-    }
-}).addTo(map);
-var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
-var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson");
-var mixed = {
-  "Biomes": biomesLayer, // BaseMaps
-  "Travel Routes": routes,
+baselayers(map)
+addablelayers(map)
 };
-L.control.layers(null, mixed).addTo(map);
+function baselayers(map){
+  var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{
+      style: StateStyle
+  }).addTo(map);
+
+  var riverLayer = new L.GeoJSON.AJAX("data/Atlantis_rivers.geojson",{
+      style: riverstyle
+  }).addTo(map);
+
+  var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function (feature, latlng) {
+          return L.circleMarker(latlng, citystyle);
+      }
+  }).addTo(map);
 };
 
+function addablelayers(map){
+  var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
+  var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson");
+  var mixed = {
+    "Biomes": biomesLayer, // BaseMaps
+    "Travel Routes": routes,
+  };
+  L.control.layers(null, mixed).addTo(map);
+};
 
 document.addEventListener('DOMContentLoaded',createMap)
