@@ -6,6 +6,7 @@ var riverLayer;
 var citiesLayer;
 var routes;
 
+
 //Create map function
 function createMap(){
 //Create the map
@@ -95,6 +96,8 @@ function citypointToLayer(feature, latlng){
     return layer;
 };
 
+
+
 //Overlay Layers
 function addablelayers(map){
   var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
@@ -105,6 +108,5 @@ function addablelayers(map){
   };
   L.control.layers(null, mixed).addTo(map);
 };
-
 
 document.addEventListener('DOMContentLoaded',createMap)
