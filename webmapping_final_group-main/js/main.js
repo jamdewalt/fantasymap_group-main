@@ -10,12 +10,19 @@ var routes;
 //Create map function
 function createMap(){
 //Create the map
+
+var southWest = L.latLng(-20, -50),
+    northEast = L.latLng(35, 60),
+    bounds = L.latLngBounds(southWest, northEast);
+
 map = L.map('map', {
   center: [10, 10],
   zoom: 4,
   minZoom: 4,
-  maxZoom: 7
+  maxZoom: 7,
+  maxBounds: bounds
 });
+
 
 //Add OSM base tilelayer in this case watercolor
 L.tileLayer('', {
