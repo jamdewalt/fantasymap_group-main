@@ -129,9 +129,9 @@ function createLegend(map){
           //cities circles
           var circles = ["black"];
           var radius = 3;
-          var cy = 110 - radius;
+          var cy = 30 - radius;
           svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "16" />';
-          var textY = 111;            
+          var textY = 31;            
           svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>'; 
 
           //biome colors and labeling
@@ -141,19 +141,22 @@ function createLegend(map){
           //loops to add biomes to the legend
           for(i=0; i<biomeType.length; i++) {
 
-            var textY = 390 - 8-(i*20);            
+            var textY = 345 - 8-(i*20);            
             svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + biomeType[i] + '</text>'; 
 
           }
+          //loops to add colored circles next to biome type
           for(var j=0; j<biomeColor.length; j++){
 
             var radius = 8;
-            var cy = 385- radius-(j*20);
+            var cy = 340- radius-(j*20);
             svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "0.5" stroke = "#000000" cx = "16" />';
           
           }
+          //river line and text
+          svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
+          svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "Rivers" + '</text>';
 
-          //rivers
 
           svg += "</svg>";
 
