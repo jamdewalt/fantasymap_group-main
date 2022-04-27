@@ -33,6 +33,7 @@ states(map)
 cities(map)
 rivers(map)
 addablelayers(map)
+routes(map)
 };
 
 //River Section
@@ -105,7 +106,18 @@ function citypointToLayer(feature, latlng){
     return layer;
 };
 
-
+function routes(map){
+  var routeStyle = {
+    fillColor: "#000000",
+    color: "#ff0000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 1
+  };
+  var routeLayer = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{
+      style: routeStyle
+  }).addTo(map);
+}
 
 //Overlay Layers
 function addablelayers(map){
