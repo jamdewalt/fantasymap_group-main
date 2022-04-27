@@ -12,7 +12,9 @@ function createMap(){
 //Create the map
 map = L.map('map', {
   center: [10, 10],
-  zoom: 4
+  zoom: 4,
+  minZoom: 4,
+  maxZoom: 7
 });
 
 //Add OSM base tilelayer in this case watercolor
