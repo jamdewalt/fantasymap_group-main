@@ -106,19 +106,6 @@ function citypointToLayer(feature, latlng){
     return layer;
 };
 
-function routes(map){
-  var routeStyle = {
-    fillColor: "#000000",
-    color: "#ff0000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 1
-  };
-  var routeLayer = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{
-      style: routeStyle
-  }).addTo(map);
-}
-
 //Overlay Layers
 function addablelayers(map){
   var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
@@ -128,6 +115,49 @@ function addablelayers(map){
     "Travel Routes": routes,
   };
   L.control.layers(null, mixed).addTo(map);
+};
+
+function createLegend(map){
+  var LegendControl = L.Control.extend({
+      options: {
+          position: "bottomright"
+      },
+      onAdd: function(){
+          var container = L.DomUtil.create('div', 'second-legend-control-container');
+
+          var svg = '<svg id = "attribute-legend" width = "200px" height = "50px">';
+
+          var circles = ["red"];
+
+          var radius = 8;
+          var cy = 20 - radius;
+
+          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#00ff00" fill-opacity = "1" stroke = "#000000" cx = "13" />';
+
+          var textY = 50 - 34;            
+
+          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Increasing in Density" + '</text>'; 
+
+          var circles = ["green"];
+
+          var radius = 8;
+          var cy = 45 - radius;
+
+          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#ff0000" fill-opacity = "1" stroke = "#000000" cx = "14" />';
+          
+          var textY = 50 - 8;            
+
+          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Decreasing in Density" + '</text>'; 
+
+          svg += "</svg>";
+          container.insertAdjacentHTML('beforeend', svg);
+
+          return container;
+      }
+  });
+
+  map.addControl(new LegendControl());
+
 };
 
 document.addEventListener('DOMContentLoaded',createMap)
