@@ -162,7 +162,16 @@ body {
   font-weight: bold;
 }
 
- 
+.second-legend-control-container {
+  width: 160px;
+  height: 400px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px;
+  text-align: center;
+  border: solid gray 1px;
+}
 
 layer.bindPopup(popupContent, {
        offset: new L.Point(0,-options.radius)

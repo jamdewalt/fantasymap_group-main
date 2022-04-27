@@ -124,32 +124,39 @@ function createLegend(map){
       },
       onAdd: function(){
           var container = L.DomUtil.create('div', 'second-legend-control-container');
+          var svg = '<svg id = "attribute-legend" width = "200px" height = "400px">';
 
-          var svg = '<svg id = "attribute-legend" width = "200px" height = "50px">';
+          //cities circles
+          var circles = ["black"];
+          var radius = 3;
+          var cy = 110 - radius;
+          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "16" />';
+          var textY = 111;            
+          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>'; 
 
-          var circles = ["red"];
+          //biome colors and labeling
+          var biomeType = ["Glacier", "Mountain", "Tundra", "Grassland", "Taiga", "Savanna", "Deciduous Forest", "Temperate Rainforest", "Tropical Forest", "Hot Desert", "Wetland", "Tropical Rainforest", "Volcanic"];
+          var biomeColor = ["#d5e7eb", "#661d00", "#96784b", "#c8d68f", "#4b6b32", "#d2d082", "#29bc56", "#409c43", "#b6d95d", "#fbe79f", "#0b9131", "#7dcb35", "#ff7648"];
 
-          var radius = 8;
-          var cy = 20 - radius;
+          //loops to add biomes to the legend
+          for(i=0; i<biomeType.length; i++) {
 
-          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#00ff00" fill-opacity = "1" stroke = "#000000" cx = "13" />';
+            var textY = 390 - 8-(i*20);            
+            svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + biomeType[i] + '</text>'; 
 
-          var textY = 50 - 34;            
+          }
+          for(var j=0; j<biomeColor.length; j++){
 
-          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Increasing in Density" + '</text>'; 
-
-          var circles = ["green"];
-
-          var radius = 8;
-          var cy = 45 - radius;
-
-          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#ff0000" fill-opacity = "1" stroke = "#000000" cx = "14" />';
+            var radius = 8;
+            var cy = 385- radius-(j*20);
+            svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "0.5" stroke = "#000000" cx = "16" />';
           
-          var textY = 50 - 8;            
+          }
 
-          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Decreasing in Density" + '</text>'; 
+          //rivers
 
           svg += "</svg>";
+
           container.insertAdjacentHTML('beforeend', svg);
 
           return container;
