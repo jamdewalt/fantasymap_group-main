@@ -33,7 +33,7 @@ states(map)
 cities(map)
 rivers(map)
 addablelayers(map)
-routes(map)
+createLegend(map)
 };
 
 //River Section
