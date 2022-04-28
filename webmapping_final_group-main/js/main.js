@@ -31,11 +31,11 @@ L.tileLayer('', {
         'attribution': 'Map data &copy; OpenStreetMap contributors'
 }).addTo(map);
 
+shallowoceans(map)
+oceans(map)
 states(map)
 cities(map)
 rivers(map)
-shallowoceans(map)
-oceans(map)
 addablelayers(map)
 createLegend(map)
 };
