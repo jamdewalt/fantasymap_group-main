@@ -139,8 +139,22 @@ function citypointToLayer(feature, latlng){
 
 //Overlay Layers
 function addablelayers(map){
+<<<<<<< Updated upstream
   var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
   var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson");
+=======
+  var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson",{style: biomeStyle});
+  var routestyle = {
+    fillColor: "#1b100c",
+    color: "#1b100c",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: 1
+  };
+  var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle,onEachFeature: function (feature, layer) {
+      layer.bindTooltip(feature.properties.id,{});
+  }});
+>>>>>>> Stashed changes
   var mixed = {
     "Biomes": biomesLayer, // BaseMaps
     "Travel Routes": routes,
