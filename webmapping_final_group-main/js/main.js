@@ -63,7 +63,7 @@ function states(map){
   }
   var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
     ,onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.State);
+        layer.bindTooltip(feature.properties.State,{className: "my-label"});
     }
   }).addTo(map);
 };
@@ -106,10 +106,29 @@ function citypointToLayer(feature, latlng){
     return layer;
 };
 
+function biomeStyle(feature) {
+    return {
+      fillColor: feature.properties.Color,
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 1
+    };
+  }
+
+
+
 //Overlay Layers
 function addablelayers(map){
-  var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson");
-  var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson");
+  var biomesLayer = new L.GeoJSON.AJAX("data/Atlantis_biomes.geojson",{style: biomeStyle});
+  var routestyle = {
+    fillColor: "#1b100c",
+    color: "#1b100c",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 1
+  };
+  var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle});
   var mixed = {
     "Biomes": biomesLayer, // BaseMaps
     "Travel Routes": routes,
@@ -131,8 +150,8 @@ function createLegend(map){
           var radius = 3;
           var cy = 30 - radius;
           svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "16" />';
-          var textY = 31;            
-          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>'; 
+          var textY = 31;
+          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>';
 
           //biome colors and labeling
           var biomeType = ["Glacier", "Mountain", "Tundra", "Grassland", "Taiga", "Savanna", "Deciduous Forest", "Temperate Rainforest", "Tropical Forest", "Hot Desert", "Wetland", "Tropical Rainforest", "Volcanic"];
@@ -141,8 +160,8 @@ function createLegend(map){
           //loops to add biomes to the legend
           for(i=0; i<biomeType.length; i++) {
 
-            var textY = 345 - 8-(i*20);            
-            svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + biomeType[i] + '</text>'; 
+            var textY = 345 - 8-(i*20);
+            svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + biomeType[i] + '</text>';
 
           }
           //loops to add colored circles next to biome type
@@ -151,7 +170,7 @@ function createLegend(map){
             var radius = 8;
             var cy = 340- radius-(j*20);
             svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "0.5" stroke = "#000000" cx = "16" />';
-          
+
           }
           //river line and text
           svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
