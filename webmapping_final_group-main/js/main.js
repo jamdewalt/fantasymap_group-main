@@ -117,6 +117,10 @@ function cityPopupContent(properties){
 };
 
 function citypointToLayer(feature, latlng){
+  var greenIcon = L.icon({
+    iconUrl: 'img/capital.png',
+    iconSize: [15, 15], // size of the icon
+  });
     var citystyle = {
       radius: 3,
       fillColor: "#000",
@@ -125,7 +129,12 @@ function citypointToLayer(feature, latlng){
       opacity: 1,
       fillOpacity: 1
     };
-    var layer = L.circleMarker(latlng, citystyle);
+    if (feature.properties.Capital=="capital"){
+      var layer=L.marker(latlng, {icon: greenIcon});
+    } else{
+      var layer = L.circleMarker(latlng, citystyle);
+    }
+
     //Build popup content string
     var citypopupContent = new cityPopupContent(feature.properties);
     //Bind the popup to the circle marker
