@@ -31,8 +31,8 @@ L.tileLayer('', {
         'attribution': 'Map data &copy; OpenStreetMap contributors'
 }).addTo(map);
 
-shallowoceans(map)
 oceans(map)
+shallowoceans(map)
 states(map)
 cities(map)
 rivers(map)
