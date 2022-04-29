@@ -34,10 +34,10 @@ L.tileLayer('', {
 oceans(map)
 shallowoceans(map)
 states(map)
-cities(map)
 rivers(map)
 addablelayers(map)
 createLegend(map)
+cities(map)
 };
 
 //River Section
