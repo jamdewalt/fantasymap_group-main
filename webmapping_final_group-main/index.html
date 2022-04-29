@@ -25,7 +25,12 @@
             <a href="#about">About</a>
             <a href="#help">Help</a>
             <a href="#contact">Contact</a>
-            <input type="text" placeholder="Search..">
+            <!--Make sure the form has the autocomplete function switched off:-->
+            <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Search..">
+                </div>
+            </form>
         </div> 
 
         <!--put your initial page content here-->
@@ -39,8 +44,7 @@
         <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
         <!--<script type="text/javascript" src="../dist/Leaflet.LinearMeasurement.js"></script>-->
         <script type="text/javascript" src="js/main.js"></script>
-
-      
+          </div> 
 
     </body>
 </html>
