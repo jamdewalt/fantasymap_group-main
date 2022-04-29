@@ -31,6 +31,14 @@ L.tileLayer('', {
         'attribution': 'Map data &copy; OpenStreetMap contributors'
 }).addTo(map);
 
+var popup = L.popup({
+  closeButton: true,
+  autoClose: true
+  })
+  .setLatLng(map.getBounds().getCenter())
+  .setContent('<p>Welcome to Atlantis, a fantasy world visualized. Please feel free to explore!</p>')
+  .openOn(map);
+
 oceans(map)
 shallowoceans(map)
 states(map)
