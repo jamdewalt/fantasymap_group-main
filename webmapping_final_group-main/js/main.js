@@ -41,6 +41,7 @@ var popup = L.popup({
   .setContent('<p>Welcome to Atlantis, a fantasy world visualized. Please feel free to explore!</p>')
   .openOn(map);
 
+autocomplete(document.getElementById("myInput"), countries);
 oceans(map)
 shallowoceans(map)
 states(map)
@@ -48,6 +49,7 @@ rivers(map)
 addablelayers(map)
 createLegend(map)
 cities(map)
+
 };
 
 //River Section
@@ -311,7 +313,7 @@ function createLegend(map){
           //loops to add biomes to the legend
           for(i=0; i<biomeType.length; i++) {
 
-            var textY = 345 - 8-(i*20);
+            var textY = 335 - 8-(i*20);
             svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + biomeType[i] + '</text>';
 
           }
@@ -319,13 +321,23 @@ function createLegend(map){
           for(var j=0; j<biomeColor.length; j++){
 
             var radius = 8;
-            var cy = 340- radius-(j*20);
+            var cy = 330- radius-(j*20);
             svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "0.5" stroke = "#000000" cx = "16" />';
 
           }
           //river line and text
           svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
           svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "Rivers" + '</text>';
+
+          //capitol icon
+          var capitolImg = L.icon({
+            iconUrl: 'img/capital.png',
+            iconSize: [15, 15], // size of the icon
+          });
+
+          svg += capitolImg
+          svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capitols" + '</text>';
+          
 
 
           svg += "</svg>";
