@@ -6,9 +6,22 @@
     2.  Because of Stellvite, the people of Atlantis never became reliant on coal, gas, etc. Although Stellvite helped create advanced technology, there was no industrial revolution like there was on earth. This world has a steampunk/1800s/fantasy feel. 
 
 ----------
-2. User Case Scenarios
-    1. Scenario 1: Upon arriving at the interactive, the user is met with a visual of the map of Atlantis. The user has four main options upon opening the map, pan, zoom, retrieve, or search for a location on the map. The user is interested in learning more about "Norskena" and the area surrounding it so they zoom to that corner of the map. From there the user pans across the area and clicks on different buildings, cities, and locations **identifying** them by their names and **associating** them with what they read in the book. While exploring the area the user clicks on the city of Dypvik in order to retrieve information about the city and its relation to the story. A pop up explaining Dypvik's significance to the story and the actions that took place here enters the screen allowing the user to **associate** what they read to what they can see on the map and where every action took place. The user then pans to the nearby city of Veka and **comparing** it to Dypvik, looks for similarities and differences between the two and what took place at each city. After learning all they can and being able to visualize what they read the user logs off the map. 
-    2. Scenario 2: Upon arriving at the interactive, the user is met with a visual of the map of Atlantis. The user has four main options upon opening the map, pan, zoom, retrieve, or search for a location on the map. This user is interested in the actions that took place within The Great Northern Wood so they move to the searchbar and type in Skograheim, the city within the forests. Upon entering the name the users screen pans and zooms to the city and a pop up provides information and visuals to the user. With this the user is able to **compare** their ideas of what Skograheim looked like to it's portrayed appearance on the map. Knowing where Skograheim now lies the user now builds an **association** between Skograheim and the Great Northern Wood and their location within The Kingdom of Vynter. Curious now about the Kingdom of Vynter and more about what took place here within the story. The user pans to the Jarnmerki Mountains to learn more about how treacherous the path through them is and **identifying** the road that the main characters travelled on through those dangerous cliffs and valleys. After learning more about the cities and areas to the north within the story, the user logs off the map.
+2. Basics of Stellvite
+    1. Stellvite is both malleable and indestructible. In its natural form it is soft, so it can be shaped into whatever you want. Once it is heated by fire, it becomes indestructible.
+    2. Because it is so malleable, Stellvite is often found mixed with other metals like nickel, copper, iron, gold, silver. These different mixtures are used for different purposes.
+    3. Pure Stellvite is rare.
+    4. Stellvite is often found in the presence of a poisonous gas, so it has to be mined/extracted carefully.
+
+ ----------
+3. World History:
+    1. Before the Drangjörd Empire, the continent of Atlantis was made up of hundreds of small kingdoms
+    2. The Drangrian people, from Drangjörd (current day Norskena and the northwest part of the Kingdom of Vynter), were seafaring traders, warriors, and explorers (inspired by vikings).
+    3. The Drangrians were the first people to discover and use Stellvite. Once their meager supply ran out, they started searching the world for more. 
+    4. Over the course of a century—a period of time called the Blood Age—the Drangrian people expanded throughout and eventually conquered all of Atlantis. 
+ 
 ----------
-3.Requirements Document:
+4. Basics of Stellvite
+    1. Stellvite is both malleable and indestructible. In its natural form it is soft, so it can be shaped into whatever you want. Once it is heated by fire, it becomes indestructible.
+
+
 
