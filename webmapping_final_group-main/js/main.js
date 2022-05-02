@@ -179,12 +179,42 @@ function addablelayers(map){
     opacity: 1,
     fillOpacity: 1
   };
+  function religionStyle(feature) {
+    return {
+      fillColor: feature.properties.Color,
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 1
+    }
+  };
+  var religionLayer = new L.GeoJSON.AJAX("data/Atlantis_religions.geojson",{style: religionStyle});
+  var routestyle = {
+    fillColor: "#1b100c",
+    color: "#1b100c",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: 1
+  };
+  function territoryStyle(feature) {
+    return {
+      fillColor: feature.properties.Color,
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 1
+    }
+  };
+  var territoryLayer = new L.GeoJSON.AJAX("data/Atlantis_territory.geojson",{style: territoryStyle});
+ 
   var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle,onEachFeature: function (feature, layer) {
       layer.bindTooltip(feature.properties.id,{});
   }});
   var mixed = {
     "Biomes": biomesLayer, // BaseMaps
     "Travel Routes": routes,
+    "Religions": religionLayer,
+    "Before Split Territories": territoryLayer,
   };
   L.control.layers(null, mixed).addTo(map);
 };
