@@ -62,9 +62,46 @@ function rivers(map){
     fillOpacity: 1
   };
   var riverLayer = new L.GeoJSON.AJAX("data/Atlantis_rivers.geojson",{
-      style: riverstyle
-  }).addTo(map);
+      style: riverstyle,onEachFeature: function (feature, layer) {
+          layer.bindTooltip(feature.properties.name,{});
+      }}).addTo(map);
 }
+
+
+// State Section
+function states(map){
+  function StateStyle(feature) {
+    return {
+      fillColor: feature.properties.Color,
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+  }
+  var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
+    ,onEachFeature: function (feature, layer) {
+        layer.bindTooltip(feature.properties.State,{direction: "center", permanent: true, className: 'labelstyle'});
+    }
+  }).addTo(map);
+};
+
+//City Section
+function cities(map){
+  var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function(feature, latlng){
+            return citypointToLayer(feature, latlng);
+             }
+      }).addTo(map);
+  };
+
+function cityPopupContent(properties){
+  //Using object oriented programming to create different parts of the popup
+  this.properties = properties;
+  this.cityname = this.properties["Burg"]
+  this.population = this.properties["Population"]
+  //Creates the format for the popup
+  this.formatted = "<p><b>City:</b> " + this.cityname + "</p><p><b>Population:</b>" + this.population + "</p>" ;
+};
 //Shallow Ocean Section
 function shallowoceans(map){
   var shallowoceansstyle = {
@@ -92,41 +129,6 @@ function oceans(map){
       style: oceansstyle
   }).addTo(map);
 }
-
-// State Section
-function states(map){
-  function StateStyle(feature) {
-    return {
-      fillColor: feature.properties.Color,
-      color: "#000",
-      weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8
-    };
-  }
-  var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
-    ,onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.State);
-    }
-  }).addTo(map);
-};
-
-//City Section
-function cities(map){
-  var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function(feature, latlng){
-            return citypointToLayer(feature, latlng);
-             }
-      }).addTo(map);
-  };
-
-function cityPopupContent(properties){
-  //Using object oriented programming to create different parts of the popup
-  this.properties = properties;
-  this.cityname = this.properties["Burg"]
-  this.population = this.properties["Population"]
-  //Creates the format for the popup
-  this.formatted = "<p><b>City:</b> " + this.cityname + "</p><p><b>Population:</b>" + this.population + "</p>" ;
-};
 
 function citypointToLayer(feature, latlng){
   var greenIcon = L.icon({
@@ -283,7 +285,7 @@ function autocomplete(inp, arr) {
 document.addEventListener("click", function (e) {
     closeAllLists(e.target);
 });
-} 
+}
 
 
 
@@ -337,7 +339,7 @@ function createLegend(map){
 
           svg += capitolImg
           svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capitols" + '</text>';
-          
+
 
 
           svg += "</svg>";

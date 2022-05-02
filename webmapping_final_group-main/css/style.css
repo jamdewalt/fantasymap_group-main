@@ -7,7 +7,19 @@ body {
 .leaflet-popup-content p {
     margin: 0.1em 0;
 }
-
+.labelstyle {
+    font-size:12px;
+    font-weight: 700;
+    Opacity: 0;
+    background-color: none !important;
+    border-color: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0px;
+    cursor: none !important;
+    direction: 'center';
+}
 h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: normal; line-height: 0px; margin: .5; }
 
 /* Style the header with a grey background and some padding */
@@ -234,7 +246,7 @@ h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
-} 
+}
 
 /* Add a black background color to the top navigation bar */
 .topnav {
