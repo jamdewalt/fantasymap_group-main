@@ -44,9 +44,9 @@ var popup = L.popup({
 autocomplete(document.getElementById("myInput"), countries);
 oceans(map)
 shallowoceans(map)
-states(map)
-rivers(map)
+land(map)
 addablelayers(map)
+rivers(map)
 createLegend(map)
 cities(map)
 
@@ -68,21 +68,12 @@ function rivers(map){
 }
 
 
-// State Section
-function states(map){
-  function StateStyle(feature) {
-    return {
-      fillColor: feature.properties.Color,
-      color: "#000",
-      weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8
-    };
-  }
-  var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
-    ,onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.State,{direction: "center", permanent: true, className: 'labelstyle'});
-    }
+// Land Section
+function land(map){
+  var landLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{fillColor:"#ECCB98",color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 1
   }).addTo(map);
 };
 
@@ -202,21 +193,38 @@ function addablelayers(map){
       color: "#000",
       weight: 1,
       opacity: 1,
-      fillOpacity: 1
+      fillOpacity: 0.5
     }
   };
   var territoryLayer = new L.GeoJSON.AJAX("data/Atlantis_territory.geojson",{style: territoryStyle});
- 
+
   var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle,onEachFeature: function (feature, layer) {
       layer.bindTooltip(feature.properties.id,{});
   }});
-  var mixed = {
+  function StateStyle(feature) {
+    return {
+      fillColor: feature.properties.Color,
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.5
+    };
+  }
+  var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
+    ,onEachFeature: function (feature, layer) {
+        layer.bindTooltip(feature.properties.State,{direction: "center", permanent: true, className: 'labelstyle'});
+    }
+  });
+  var addablelayers = {
     "Biomes": biomesLayer, // BaseMaps
     "Travel Routes": routes,
     "Religions": religionLayer,
-    "Before Split Territories": territoryLayer,
   };
-  L.control.layers(null, mixed).addTo(map);
+  var overallayers = {
+    "Current States": stateLayer,
+    "Former territories" : territoryLayer,
+  };
+  L.control.layers(overallayers, addablelayers).addTo(map);
 };
 
 //autocomplete function for search bar
