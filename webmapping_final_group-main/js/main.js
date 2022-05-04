@@ -317,10 +317,6 @@ document.addEventListener("click", function (e) {
 });
 }
 
-
-
-
-
 function createLegend(map){
   var LegendControl = L.Control.extend({
       options: {
