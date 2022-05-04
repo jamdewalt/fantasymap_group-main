@@ -1,17 +1,11 @@
 ![Atlantis: After the Great Splitting](/webmapping_final_group-main/img/Atlantis.jpg "Atlantis")
 
 ### About Atlantis
-1. The Basics
-    1.  The world of Atlantis runs on Stellvite, a type of metal not found on Earth. Think of it like Vibranium from Black Panther. The people of Atlantis use it to create technology that borders on magical. 
-    2.  Because of Stellvite, the people of Atlantis never became reliant on coal, gas, etc. Although Stellvite helped create advanced technology, there was no industrial revolution like there was on earth. This world has a steampunk/1800s/fantasy feel. 
+The world of Atlantis runs on Stellvite, a type of metal not found on Earth. Think of it like Vibranium from Black Panther. The people of Atlantis use it to create technology that borders on magical. Because of Stellvite, the people of Atlantis never became reliant on coal, gas, etc. Although Stellvite helped create advanced technology, there was no industrial revolution like there was on earth. This world has a steampunk/1800s/fantasy feel. 
 
 ----------
 ### Stellvite
-2. Basics of Stellvite
-    1. Stellvite is both malleable and indestructible. In its natural form it is soft, so it can be shaped into whatever you want. Once it is heated by fire, it becomes indestructible.
-    2. Because it is so malleable, Stellvite is often found mixed with other metals like nickel, copper, iron, gold, silver. These different mixtures are used for different purposes.
-    3. Pure Stellvite is rare.
-    4. Stellvite is often found in the presence of a poisonous gas, so it has to be mined/extracted carefully.
+Stellvite is both malleable and indestructible. In its natural form it is soft, so it can be shaped into whatever you want. Once it is heated by fire, it becomes indestructible.Because it is so malleable, Stellvite is often found mixed with other metals like nickel, copper, iron, gold, silver. These different mixtures are used for different purposes. Pure Stellvite is rare. Stellvite is often found in the presence of a poisonous gas, so it has to be mined/extracted carefully.
 
  ----------
  ### Before the Great Splitting
