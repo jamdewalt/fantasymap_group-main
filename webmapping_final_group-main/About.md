@@ -6,6 +6,7 @@
     2.  Because of Stellvite, the people of Atlantis never became reliant on coal, gas, etc. Although Stellvite helped create advanced technology, there was no industrial revolution like there was on earth. This world has a steampunk/1800s/fantasy feel. 
 
 ----------
+### Stellvite
 2. Basics of Stellvite
     1. Stellvite is both malleable and indestructible. In its natural form it is soft, so it can be shaped into whatever you want. Once it is heated by fire, it becomes indestructible.
     2. Because it is so malleable, Stellvite is often found mixed with other metals like nickel, copper, iron, gold, silver. These different mixtures are used for different purposes.
@@ -13,6 +14,7 @@
     4. Stellvite is often found in the presence of a poisonous gas, so it has to be mined/extracted carefully.
 
  ----------
+ ### Before the Great Splitting
 3. World History:
     1. Before the Drangjörd Empire, the continent of Atlantis was made up of hundreds of small kingdoms
     2. The Drangrian people, from Drangjörd (current day Norskena and the northwest part of the Kingdom of Vynter), were seafaring traders, warriors, and explorers (inspired by vikings).
