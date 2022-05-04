@@ -43,5 +43,11 @@ Monotheistic religion that worships the God Usman. Usman is the only God and kno
 5. Mounyama: 
 A monotheistic religion (based on a hybrid of Afro-Caribbean religions). This religion is practiced in the Elderon Islands
 
+----------
+ ### Sources
+1. Azgaar's Fantasy Map Generator
+This project relied on Azgaar for inspiration and the creation of json files. Azgaar's Fantasy Map Generator is a free web application generating interactive and highly customizable svg maps based on voronoi diagram. https://github.com/Azgaar/Fantasy-Map-Generator
+2. Tom NixNachname 
+This project utilized video tutorials created by Tom NixNachname, creator of the Dragon Eye Atlas. https://lemuria.org/dragoneye/atlas/Main_Page, https://www.youtube.com/watch?v=WIqd_WK2cvM
 
 
