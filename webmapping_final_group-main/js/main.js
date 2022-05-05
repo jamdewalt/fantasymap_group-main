@@ -81,7 +81,7 @@ function land(map){
 function cities(map){
   var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function(feature, latlng){
             return citypointToLayer(feature, latlng);
-             }
+          }
       }).addTo(map);
   };
 
