@@ -81,7 +81,7 @@ function states(map){
   }
   var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
     ,onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.State,{direction: "center", permanent: true, className: 'labelstyle'});
+        layer.bindTooltip(feature.properties.State,{direction: "center", className: 'labelstyle'});
     }
   }).addTo(map);
 };
@@ -188,7 +188,9 @@ function addablelayers(map){
       fillOpacity: 1
     }
   };
-  var religionLayer = new L.GeoJSON.AJAX("data/Atlantis_religions.geojson",{style: religionStyle});
+  var religionLayer = new L.GeoJSON.AJAX("data/Atlantis_religions.geojson",{style: religionStyle,onEachFeature: function (feature, layer) {
+      layer.bindTooltip(feature.properties.Religion,{direction: "center", permanent: true, className: 'labelstyle'});
+  }});
   var routestyle = {
     fillColor: "#1b100c",
     color: "#1b100c",
@@ -206,7 +208,7 @@ function addablelayers(map){
     }
   };
   var territoryLayer = new L.GeoJSON.AJAX("data/Atlantis_territory.geojson",{style: territoryStyle});
- 
+
   var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle,onEachFeature: function (feature, layer) {
       layer.bindTooltip(feature.properties.id,{});
   }});
