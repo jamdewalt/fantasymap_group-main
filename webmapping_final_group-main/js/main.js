@@ -26,6 +26,11 @@ map = L.map('map', {
   maxZoom: 7,
   maxBounds: bounds
 });
+map.createPane('Background');
+map.getPane('Background').style.zIndex = 650;
+
+map.createPane('Important');
+map.getPane('Important').style.zIndex = 700;
 
 
 //Add OSM base tilelayer in this case watercolor
@@ -64,7 +69,7 @@ function rivers(map){
   var riverLayer = new L.GeoJSON.AJAX("data/Atlantis_rivers.geojson",{
       style: riverstyle,onEachFeature: function (feature, layer) {
           layer.bindTooltip(feature.properties.name,{});
-      }}).addTo(map);
+      },pane: 'Important'}).addTo(map);
 }
 
 
@@ -81,7 +86,7 @@ function land(map){
 function cities(map){
   var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function(feature, latlng){
             return citypointToLayer(feature, latlng);
-          }
+          },pane: 'Important'
       }).addTo(map);
   };
 
@@ -196,7 +201,7 @@ function addablelayers(map){
       fillOpacity: 0.5
     }
   };
-  var territoryLayer = new L.GeoJSON.AJAX("data/Atlantis_territory.geojson",{style: territoryStyle});
+  var territoryLayer = new L.GeoJSON.AJAX("data/Atlantis_territory.geojson",{style: territoryStyle,pane: 'Background'});
 
   var routes = new L.GeoJSON.AJAX("data/Atlantis_routes.geojson",{style: routestyle,onEachFeature: function (feature, layer) {
       layer.bindTooltip(feature.properties.id,{});
@@ -213,7 +218,7 @@ function addablelayers(map){
   var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
     ,onEachFeature: function (feature, layer) {
         layer.bindTooltip(feature.properties.State,{direction: "center", permanent: true, className: 'labelstyle'});
-    }
+    },pane: 'Background'
   });
   var addablelayers = {
     "Biomes": biomesLayer, // BaseMaps
