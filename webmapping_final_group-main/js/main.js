@@ -23,7 +23,7 @@ map = L.map('map', {
   center: [10, 10],
   zoom: 4,
   minZoom: 4,
-  maxZoom: 7,
+  maxZoom: 5,
   maxBounds: bounds
 });
 
@@ -89,8 +89,16 @@ function states(map){
 //City Section
 function cities(map){
   var citiesLayer = new L.GeoJSON.AJAX("data/Atlantis_cities.geojson", {pointToLayer: function(feature, latlng){
-            return citypointToLayer(feature, latlng);
-             }
+            return citypointToLayer(feature, latlng)},
+             onEachFeature: function(feature,layer)
+                    {
+                    layer.on("mouseover",function(e){
+                        layer.setStyle({fillColor: 'green'})
+                    });
+                    layer.on("mouseout",function(e){
+                        layer.setStyle({fillColor: '#000'});
+                    });
+                    }
       }).addTo(map);
   };
 
@@ -102,6 +110,37 @@ function cityPopupContent(properties){
   //Creates the format for the popup
   this.formatted = "<p><b>City:</b> " + this.cityname + "</p><p><b>Population:</b>" + this.population + "</p>" ;
 };
+
+
+function citypointToLayer(feature, latlng){
+  var capitalIcon = L.icon({
+    iconUrl: 'img/capital.png',
+    iconSize: [15, 15], // size of the icon
+  });
+    var citystyle = {
+      radius: 3,
+      fillColor: "#000",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 1
+    };
+    if (feature.properties.Capital=="capital"){
+      var layer=L.marker(latlng, {icon: capitalIcon});
+    } else{
+      var layer = L.circleMarker(latlng, citystyle);
+    }
+    //Build popup content string
+    var citypopupContent = new cityPopupContent(feature.properties);
+    //Bind the popup to the circle marker
+    layer.bindPopup(citypopupContent.formatted, {
+        offset: new L.Point(0,-5)
+    });
+
+    //Return the circle marker to the L.geoJson pointToLayer option
+    return layer;
+};
+
 //Shallow Ocean Section
 function shallowoceans(map){
   var shallowoceansstyle = {
@@ -129,36 +168,6 @@ function oceans(map){
       style: oceansstyle
   }).addTo(map);
 }
-
-function citypointToLayer(feature, latlng){
-  var greenIcon = L.icon({
-    iconUrl: 'img/capital.png',
-    iconSize: [15, 15], // size of the icon
-  });
-    var citystyle = {
-      radius: 3,
-      fillColor: "#000",
-      color: "#000",
-      weight: 1,
-      opacity: 1,
-      fillOpacity: 1
-    };
-    if (feature.properties.Capital=="capital"){
-      var layer=L.marker(latlng, {icon: greenIcon});
-    } else{
-      var layer = L.circleMarker(latlng, citystyle);
-    }
-
-    //Build popup content string
-    var citypopupContent = new cityPopupContent(feature.properties);
-    //Bind the popup to the circle marker
-    layer.bindPopup(citypopupContent.formatted, {
-        offset: new L.Point(0,-5)
-    });
-
-    //Return the circle marker to the L.geoJson pointToLayer option
-    return layer;
-};
 
 //Overlay Layers
 function addablelayers(map){
