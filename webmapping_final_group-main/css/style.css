@@ -9,9 +9,12 @@ body {
 }
 .labelstyle {
     font-size:12px;
-    font-weight: 700;
+    font-weight: 900;
     Opacity: 0;
+    background-color: none !important;
     border-color: none !important;
+    background: none !important;
+    border: none !important;
     box-shadow: none !important;
     margin: 0px;
     cursor: none !important;
