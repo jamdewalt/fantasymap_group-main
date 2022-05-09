@@ -198,6 +198,7 @@ function addablelayers(map){
       weight: 1,
       opacity: 1,
       fillOpacity: 1
+      
     }
   };
   var religionLayer = new L.GeoJSON.AJAX("data/Atlantis_religions.geojson",{style: religionStyle,onEachFeature: function (feature, layer) {
@@ -341,11 +342,11 @@ function createLegend(map){
           var container = L.DomUtil.create('div', 'second-legend-control-container');
           var svg = '<svg id = "attribute-legend" width = "200px" height = "400px">';
 
-          //cities circles
+          //cities circle
           var circles = ["black"];
           var radius = 3;
           var cy = 30 - radius;
-          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "16" />';
+          svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "15" />';
           var textY = 31;
           svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>';
 
@@ -372,16 +373,9 @@ function createLegend(map){
           svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
           svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "Rivers" + '</text>';
 
-          //capitol icon
-          var capitolImg = L.icon({
-            iconUrl: 'img/capital.png',
-            iconSize: [15, 15], // size of the icon
-          });
-
-          svg += capitolImg
+          //capitol icon      
+          svg += '<image href="img/capital.png" height="15" width="15" x="8" y="' + 36 + '"/>'
           svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capitols" + '</text>';
-
-
 
           svg += "</svg>";
 
