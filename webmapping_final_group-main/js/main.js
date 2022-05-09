@@ -366,7 +366,7 @@ function createLegend(map){
 
             var radius = 8;
             var cy = 330- radius-(j*20);
-            svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "0.5" stroke = "#000000" cx = "16" />';
+            svg += '<circle class = "legend-circle" id = "' + biomeColor[j] + '"r="' + radius + '"cy="' + cy + '" fill ="'+ biomeColor[j] +'"fill-opacity = "1" stroke = "#000000" cx = "16" />';
 
           }
           //river line and text

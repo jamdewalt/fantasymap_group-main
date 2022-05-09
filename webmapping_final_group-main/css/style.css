@@ -9,7 +9,7 @@ body {
 }
 .labelstyle {
     font-size:12px;
-    font-weight: 900;
+    font-weight: 700;
     Opacity: 0;
     background-color: none !important;
     border-color: none !important;
@@ -20,7 +20,6 @@ body {
     cursor: none !important;
     direction: 'center';
 }
-
 h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: normal; line-height: 0px; margin: .5; }
 
 /* Style the header with a grey background and some padding */
