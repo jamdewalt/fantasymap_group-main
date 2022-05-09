@@ -1,15 +1,22 @@
 /*CSS Styles for all parts of the html*/
+@font-face {
+  font-family: 'Enchanted';
+  src: url('fonts/Enchanted-Land.otf');
+}
+
 body {
-  background-color: #7c795d;
+  background-color: #b1a38b;
 }
 #map { height: 600px; }
 
 .leaflet-popup-content p {
+    font-family: 'Times New Roman';
     margin: 0.1em 0;
 }
 .labelstyle {
-    font-size:12px;
-    font-weight: 700;
+    font-family: 'Enchanted', sans-serif;
+    font-size:24px;
+    font-weight: bold;
     Opacity: 0;
     background-color: none !important;
     border-color: none !important;
@@ -187,6 +194,8 @@ h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight
 .second-legend-control-container {
   width: 180px;
   height: 350px;
+  font-family: 'Enchanted';
+  font-size: 18px;
   font-weight: bold;
   font-style: italic;
   background-color: rgba(255,255,255,0.8);
@@ -358,6 +367,6 @@ input[type=submit] {
 
 
 
-layer.bindPopup(popupContent, {
+/*layer.bindPopup(popupContent, {
        offset: new L.Point(0,-options.radius)
-   });
+   });*/
