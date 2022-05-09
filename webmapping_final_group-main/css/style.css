@@ -7,7 +7,10 @@
 body {
   background-color: #b1a38b;
 }
-#map { height: 600px; }
+#map { 
+  height: 600px; 
+
+}
 
 .leaflet-popup-content p {
     font-family: 'Times New Roman';
@@ -34,7 +37,6 @@ h1 {
   font-weight: normal; 
   line-height: 0px; 
   margin: 1; 
-  background-color:#b1a38b;
 }
 
 
