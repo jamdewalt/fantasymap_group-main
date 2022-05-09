@@ -27,7 +27,16 @@ body {
     cursor: none !important;
     direction: 'center';
 }
-h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: normal; line-height: 0px; margin: .5; }
+h1 { 
+  color: #2c2111; 
+  font-family: 'Enchanted', serif; 
+  font-size: 50px; 
+  font-weight: normal; 
+  line-height: 0px; 
+  margin: 1; 
+  background-color:#b1a38b;
+}
+
 
 /* Style the header with a grey background and some padding */
 .header {

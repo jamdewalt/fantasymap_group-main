@@ -111,7 +111,7 @@ function cityPopupContent(properties){
   this.pronounce = this.properties["Pronunciation info"]
   this.cityinfo = this.properties["Place info"]
   //Creates the format for the popup
-  this.formatted = "<p><b>City:</b> " + this.cityname + "</p><p><b>Population:</b>" + this.population + "</p>" + "<p><b>In the State:</b>" + this.state + "</p>"+ "<p><b>Some extra Pronunciation information:</b>" + this.pronounce + "</p>"+ "<p><b>Fun facts about the city:</b>" + this.cityinfo + "</p>"  ;
+  this.formatted = "<p><b>City: </b> " + this.cityname + "</p><p><b>Population: </b>" + this.population + "</p>" + "<p><b>In the State: </b>" + this.state + "</p>"+ "<p><b>Some Extra Pronunciation Information: </b>" + this.pronounce + "</p>"+ "<p><b>Fun Facts About the City: </b>" + this.cityinfo + "</p>"  ;
 };
 
 
