@@ -5,10 +5,11 @@
 }
 
 body {
-  background-color: #b1a38b;
+  background-color: #56acb1;
 }
 #map { 
-  height: 600px; 
+  height: 800px; 
+  background-color: #56acb1;
 
 }
 

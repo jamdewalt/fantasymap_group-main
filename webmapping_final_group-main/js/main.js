@@ -147,8 +147,8 @@ function citypointToLayer(feature, latlng){
 //Shallow Ocean Section
 function shallowoceans(map){
   var shallowoceansstyle = {
-    fillColor: "#8cdbf1",
-    color: "#8cdbf1",
+    fillColor: "#25c8d1",
+    color: "#25c8d1",
     weight: 1,
     opacity: 1,
     fillOpacity: 1
@@ -161,8 +161,8 @@ function shallowoceans(map){
 //Ocean Section
 function oceans(map){
   var oceansstyle = {
-    fillColor: "#45c3c9",
-    color: "#45c3c9",
+    fillColor: "#56acb1",
+    color: "#56acb1s",
     weight: 1,
     opacity: 1,
     fillOpacity: 1
