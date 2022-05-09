@@ -45,9 +45,11 @@ A monotheistic religion (based on a hybrid of Afro-Caribbean religions). This re
 
 ----------
  ### Sources
-1. Azgaar's Fantasy Map Generator
+1. Azgaar's Fantasy Map Generator:
 This project relied on Azgaar for inspiration and the creation of json files. Azgaar's Fantasy Map Generator is a free web application generating interactive and highly customizable svg maps based on voronoi diagram. https://github.com/Azgaar/Fantasy-Map-Generator
-2. Tom NixNachname 
+2. Tom NixNachname:
 This project utilized video tutorials created by Tom NixNachname, creator of the Dragon Eye Atlas. https://lemuria.org/dragoneye/atlas/Main_Page, https://www.youtube.com/watch?v=WIqd_WK2cvM
+3. Watabou's Procgen Arcana:
+This project used Wastabou's city generator to make city maps for capitals. https://watabou.github.io/
 
 
