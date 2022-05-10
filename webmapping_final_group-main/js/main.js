@@ -208,8 +208,8 @@ function addablelayers(map){
       layer.bindTooltip(feature.properties.Religion,{direction: "center", permanent: true, className: 'labelstyle'});
   }});
   var routestyle = {
-    fillColor: "#1b100c",
-    color: "#1b100c",
+    fillColor: "#990000",
+    color: "#990000",
     weight: 2,
     opacity: 1,
     fillOpacity: 1
