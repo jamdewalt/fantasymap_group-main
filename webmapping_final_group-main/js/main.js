@@ -364,6 +364,7 @@ function makeWaves(map){
   var marker = L.marker([-19,-20], {icon: waveIcon}).addTo(map);
   var marker = L.marker([-20,25], {icon: waveIcon}).addTo(map);
   var marker = L.marker([33,21], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([20,65], {icon: waveIcon}).addTo(map);
 
   var shipIcon = L.icon ({
     iconUrl: 'img/ship.png',
@@ -377,7 +378,7 @@ function makeWaves(map){
     iconSize: [200, 150],
   })
 
-  var marker = L.marker([20,65], {icon: monsterIcon}).addTo(map);
+  //var marker = L.marker([20,65], {icon: monsterIcon}).addTo(map);
 
   var squidIcon = L.icon ({
     iconUrl: 'img/squid.png',
