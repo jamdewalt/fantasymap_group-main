@@ -49,6 +49,7 @@ rivers(map)
 addablelayers(map)
 createLegend(map)
 cities(map)
+L.control.scale().addTo(map);
 
 };
 
