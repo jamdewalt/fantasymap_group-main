@@ -15,7 +15,7 @@ var countries = ["Dypvik","Elavara","Kaldravard","Hyandell","Fiabaile","Zarthos"
 function createMap(){
 //Create the map
 
-var southWest = L.latLng(-30, -50),
+var southWest = L.latLng(-25, -50),
     northEast = L.latLng(35, 60),
     bounds = L.latLngBounds(southWest, northEast);
 

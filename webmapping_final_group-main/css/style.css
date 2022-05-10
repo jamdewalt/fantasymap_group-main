@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #153036;
+  background-color: #1d4f5c;
 }
 
 #map { 
   height: 800px; 
-  background-color: #202f4b;
+  background-color: #1d4f5c;
   opacity: 1;
 }
 
@@ -33,15 +33,22 @@ body {
     direction: 'center';
 }
 h1 { 
-  color: #2c2111; 
+  color: #f0e8dd; 
   font-family: 'Enchanted', serif; 
-  font-size: 30px; 
+  font-size: 50px; 
   font-weight: normal; 
   line-height: 0px; 
   margin: 1; 
   padding: 5px 10px;
 }
 
+a{
+  font-family: 'Enchanted', serif;
+}
+
+#header.topnav {
+  background-color: #1d4f5c;
+}
 
 /* Style the header with a grey background and some padding */
 .header {
@@ -208,11 +215,12 @@ h1 {
 .second-legend-control-container {
   width: 180px;
   height: 350px;
+  opacity: 1;
   font-family: 'Enchanted';
   font-size: 18px;
   font-weight: bold;
   font-style: italic;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(231, 207, 171, 0.8);
   padding: 10px;
   text-align: center;
   border: solid gray 1px;
