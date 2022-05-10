@@ -7,10 +7,10 @@
 body {
   background-color: #56acb1;
 }
+
 #map { 
   height: 800px; 
   background-color: #56acb1;
-
 }
 
 .leaflet-popup-content p {
