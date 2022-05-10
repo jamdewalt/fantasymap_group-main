@@ -110,8 +110,10 @@ function cityPopupContent(properties){
   this.state = this.properties["State Full Name"]
   this.pronounce = this.properties["Pronunciation info"]
   this.cityinfo = this.properties["Place info"]
+  this.pict = this.properties["pict"]
   //Creates the format for the popup
-  this.formatted = "<p><b>City: </b> " + this.cityname + "</p><p><b>Population: </b>" + this.population + "</p>" + "<p><b>In the State: </b>" + this.state + "</p>"+ "<p><b>Some Extra Pronunciation Information: </b>" + this.pronounce + "</p>"+ "<p><b>Fun Facts About the City: </b>" + this.cityinfo + "</p>"  ;
+  this.formatted = "<p><b>City: </b> " + this.cityname + "</p><p><b>Population: </b>" + this.population + "</p>" + "<p><b>In the State: </b>" + this.state + "</p>"+ "<p><b>Some Extra Pronunciation Information: </b>" + this.pronounce + "</p>"+
+   "<p><b>Fun Facts About the City: </b>" + this.cityinfo + "</p>"+ "<center><img src='img/" + this.pict + "' style='width:200px;height:300x;'></center> "  ;
 };
 
 
@@ -198,7 +200,7 @@ function addablelayers(map){
       weight: 1,
       opacity: 1,
       fillOpacity: 1
-      
+
     }
   };
   var religionLayer = new L.GeoJSON.AJAX("data/Atlantis_religions.geojson",{style: religionStyle,onEachFeature: function (feature, layer) {
@@ -373,7 +375,7 @@ function createLegend(map){
           svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
           svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "Rivers" + '</text>';
 
-          //capitol icon      
+          //capitol icon
           svg += '<image href="img/capital.png" height="15" width="15" x="8" y="' + 36 + '"/>'
           svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capitols" + '</text>';
 
