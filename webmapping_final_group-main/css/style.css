@@ -5,12 +5,13 @@
 }
 
 body {
-  background-color: #56acb1;
+  background-color: #153036;
 }
 
 #map { 
   height: 800px; 
-  background-color: #56acb1;
+  background-color: #202f4b;
+  opacity: 1;
 }
 
 .leaflet-popup-content p {
@@ -19,7 +20,7 @@ body {
 }
 .labelstyle {
     font-family: 'Enchanted', sans-serif;
-    font-size:24px;
+    font-size: 24px;
     font-weight: bold;
     Opacity: 0;
     background-color: none !important;

@@ -76,7 +76,7 @@ function states(map){
       color: "#000",
       weight: 1,
       opacity: 1,
-      fillOpacity: 0.8
+      fillOpacity: 1
     };
   }
   var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
@@ -149,8 +149,8 @@ function citypointToLayer(feature, latlng){
 //Shallow Ocean Section
 function shallowoceans(map){
   var shallowoceansstyle = {
-    fillColor: "#25c8d1",
-    color: "#25c8d1",
+    fillColor: "#31879c",
+    color: "#31879c",
     weight: 1,
     opacity: 1,
     fillOpacity: 1
@@ -163,8 +163,8 @@ function shallowoceans(map){
 //Ocean Section
 function oceans(map){
   var oceansstyle = {
-    fillColor: "#56acb1",
-    color: "#56acb1s",
+    fillColor: "#1d4f5c",
+    color: "#1d4f5c",
     weight: 1,
     opacity: 1,
     fillOpacity: 1
