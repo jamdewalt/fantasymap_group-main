@@ -406,7 +406,7 @@ function createLegend(map){
           var cy = 30 - radius;
           svg += '<circle class = "legend-circle" id = "' + circles + '"r="' + radius + '"cy="' + cy + '" fill = "#000000" fill-opacity = "1" stroke = "#000000" cx = "15" />';
           var textY = 31;
-          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " Cities" + '</text>';
+          svg += '<text id="' + circles + '"text" x="37" y="' + textY + '">' + " City" + '</text>';
 
           //biome colors and labeling
           var biomeType = ["Glacier", "Mountain", "Tundra", "Grassland", "Taiga", "Savanna", "Deciduous Forest", "Temperate Rainforest", "Tropical Forest", "Hot Desert", "Wetland", "Tropical Rainforest", "Volcanic"];
@@ -429,11 +429,11 @@ function createLegend(map){
           }
           //river line and text
           svg += '<line x1="6" y1="10" x2="26" y2="10" style="stroke: #3944bc;"/>'
-          svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "Rivers" + '</text>';
+          svg += '<text id="' + circles + '"text" x="37" y="' + 14 + '">' + "River" + '</text>';
 
           //capitol icon
           svg += '<image href="img/capital.png" height="15" width="15" x="8" y="' + 36 + '"/>'
-          svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capitols" + '</text>';
+          svg += '<text id="' + circles + '"text" x="37" y="' + 48 + '">' + "Capital" + '</text>';
 
           svg += "</svg>";
 
