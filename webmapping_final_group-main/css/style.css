@@ -35,10 +35,11 @@ body {
 h1 { 
   color: #2c2111; 
   font-family: 'Enchanted', serif; 
-  font-size: 50px; 
+  font-size: 30px; 
   font-weight: normal; 
   line-height: 0px; 
   margin: 1; 
+  padding: 5px 10px;
 }
 
 
@@ -306,7 +307,7 @@ h1 {
   padding: 6px;
   border: none;
   margin-top: 8px;
-  margin-right: 16px;
+  margin-right: 0px;
   font-size: 17px;
   z-index: 999px;
 }
@@ -319,7 +320,7 @@ h1 {
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 14px;
+    padding: 5px;
   }
   .topnav input[type=text] {
     border: 1px solid #ccc;
@@ -338,7 +339,7 @@ body {
 input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 5px;
   font-size: 16px;
 }
 input[type=text] {
