@@ -49,6 +49,7 @@ rivers(map)
 addablelayers(map)
 createLegend(map)
 cities(map)
+makeWaves(map)
 L.control.scale().addTo(map);
 };
 
@@ -335,6 +336,60 @@ document.addEventListener("click", function (e) {
 });
 }
 
+function makeWaves(map){
+
+  var waveIcon = L.icon ({
+    iconUrl: 'img/wave4.png',
+    iconSize: [90, 85],
+  })
+
+  var marker = L.marker([-10,-65], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-5,-50], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([10, -55], {icon: waveIcon},).addTo(map);
+  var marker = L.marker([20, -70], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([23,-40], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([33,-53], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-20,-50], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([25,-21], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([10,65], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-15,50], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-5, 60], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-20, 70], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([30, 70], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([35,40], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([24,50], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([34,-25], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([32,-7], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-23,0], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-19,-20], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([-20,25], {icon: waveIcon}).addTo(map);
+  var marker = L.marker([33,21], {icon: waveIcon}).addTo(map);
+
+  var shipIcon = L.icon ({
+    iconUrl: 'img/ship.png',
+    iconSize: [80, 75],
+  })
+
+  //var marker = L.marker([0,-55], {icon: shipIcon}).addTo(map);
+
+  var monsterIcon = L.icon ({
+    iconUrl: 'img/monster.png',
+    iconSize: [200, 150],
+  })
+
+  var marker = L.marker([20,65], {icon: monsterIcon}).addTo(map);
+
+  var squidIcon = L.icon ({
+    iconUrl: 'img/squid.png',
+    iconSize: [350, 350],
+  })
+
+  var marker = L.marker([-25,-55], {icon: squidIcon}).addTo(map);
+  var marker = L.marker([-25,-59], {icon: squidIcon}).addTo(map);
+  var marker = L.marker([-25,-63], {icon: squidIcon}).addTo(map);
+}
+
+
 function createLegend(map){
   var LegendControl = L.Control.extend({
       options: {
@@ -388,6 +443,7 @@ function createLegend(map){
   });
 
   map.addControl(new LegendControl());
+
 
 };
 

@@ -32,6 +32,11 @@ body {
     cursor: none !important;
     direction: 'center';
 }
+
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive{
+  color: #2196F3;
+}
+
 h1 { 
   color: #f0e8dd; 
   font-family: 'Enchanted', serif; 
