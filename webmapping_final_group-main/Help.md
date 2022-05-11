@@ -1,2 +1,2 @@
 ### Help Page
-![](Atlantis_Help.mp4)
+![](data/Atlantis_Help.mp4)
