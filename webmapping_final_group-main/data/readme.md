@@ -1,2 +1,2 @@
 
-This folder contains geojsons for the Fantasy Mapping project
+This folder contains geojson files for the Fantasy Mapping project
