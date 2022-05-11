@@ -1,2 +1,2 @@
 ### Help Page
-[![Watch the video](https://youtu.be/15v9rAclagk)
+[![Watch the video](https://www.youtube.com/watch?v=15v9rAclagk)
