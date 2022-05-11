@@ -82,7 +82,7 @@ function states(map){
   }
   var stateLayer = new L.GeoJSON.AJAX("data/Atlantis_states.geojson",{style: StateStyle
     ,onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.State,{direction: "center",permanent:true, className: 'labelstyle'});
+        layer.bindTooltip(feature.properties.State,{direction: "center", className: 'labelstyle'});
     }
   }).addTo(map);
 };
