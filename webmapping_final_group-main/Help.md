@@ -1,2 +1,9 @@
 ### Help Page
-https://github.com/jamdewalt/fantasymap_group-main/blob/7892e60c5f2938cdf115e406473bdc2b7c168629/webmapping_final_group-main/data/Atlantis_Help.mp4
+<object width="425" height="350">
+  <param name="movie" value="https://youtu.be/15v9rAclagk" />
+  <param name="wmode" value="transparent" />
+  <embed src="https://youtu.be/15v9rAclagk"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
+
